@@ -1,0 +1,8 @@
+<h1>Home</h1>
+
+<% for (let i = 0; i < state.squadrons.length; i++) { %>
+  <% let squadron = state.squadrons[i] %>
+  <div class="squadron-link" data-id="<%= i %>"><%= squadron.name %></div>
+<% } %>
+
+<button class= "new-squad">Create New Squad</button>
